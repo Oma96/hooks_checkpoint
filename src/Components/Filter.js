@@ -1,4 +1,5 @@
 import React from 'react'
+import {Button}from 'react-bootstrap'
 
 function Filter({input,setInput}) {
 
@@ -23,7 +24,7 @@ function Filter({input,setInput}) {
         value={input}
          onChange={handleInput}
         ></input>
-        <button onClick={addHandler}>Search</button>
+        <Button variant= 'secondary' onClick={addHandler} style={{height:35}} >Search</Button>
         </form>
         </div>
     )
